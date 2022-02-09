@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppLargeText extends StatelessWidget {
-  int size;
+  double size;
   final Color color;
   final String text;
   AppLargeText(
@@ -12,9 +12,8 @@ class AppLargeText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(
-        color: color,
-      ),
+      style:
+          TextStyle(color: color, fontSize: size, fontWeight: FontWeight.bold),
     );
   }
 }
